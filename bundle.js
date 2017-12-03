@@ -935,6 +935,25 @@ module.exports = invariant;
 
 /***/ }),
 /* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(109);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -944,7 +963,7 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
@@ -954,7 +973,7 @@ module.exports = !__webpack_require__(20)(function () {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(22);
@@ -962,7 +981,7 @@ var IE8_DOM_DEFINE = __webpack_require__(56);
 var toPrimitive = __webpack_require__(31);
 var dP = Object.defineProperty;
 
-exports.f = __webpack_require__(9) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+exports.f = __webpack_require__(10) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -976,7 +995,7 @@ exports.f = __webpack_require__(9) ? Object.defineProperty : function defineProp
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1000,7 +1019,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1067,25 +1086,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(109);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
 
 /***/ }),
 /* 14 */
@@ -1517,7 +1517,7 @@ module.exports = function (it) {
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(7);
-  var warning = __webpack_require__(12);
+  var warning = __webpack_require__(13);
   var ReactPropTypesSecret = __webpack_require__(25);
   var loggedTypeFailures = {};
 }
@@ -1772,9 +1772,9 @@ function warning(message) {
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(10);
+var dP = __webpack_require__(11);
 var createDesc = __webpack_require__(32);
-module.exports = __webpack_require__(9) ? function (object, key, value) {
+module.exports = __webpack_require__(10) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
   object[key] = value;
@@ -1820,7 +1820,7 @@ module.exports = function (bitmap, value) {
 
 var global = __webpack_require__(5);
 var hide = __webpack_require__(30);
-var has = __webpack_require__(8);
+var has = __webpack_require__(9);
 var SRC = __webpack_require__(14)('src');
 var TO_STRING = 'toString';
 var $toString = Function[TO_STRING];
@@ -3083,7 +3083,7 @@ function matchKeys(_ref) {
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(9) && !__webpack_require__(20)(function () {
+module.exports = !__webpack_require__(10) && !__webpack_require__(20)(function () {
   return Object.defineProperty(__webpack_require__(57)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -3119,7 +3119,7 @@ module.exports = false;
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(8);
+var has = __webpack_require__(9);
 var toIObject = __webpack_require__(16);
 var arrayIndexOf = __webpack_require__(132)(false);
 var IE_PROTO = __webpack_require__(62)('IE_PROTO');
@@ -3457,31 +3457,31 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _redux = __webpack_require__(17);
 
-var _reactRedux = __webpack_require__(13);
+var _reactRedux = __webpack_require__(8);
 
 var _Layout = __webpack_require__(116);
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-var _reducers = __webpack_require__(212);
+var _reducers = __webpack_require__(215);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-__webpack_require__(213);
+__webpack_require__(216);
 
-__webpack_require__(222);
+__webpack_require__(225);
 
 __webpack_require__(71);
 
 __webpack_require__(70);
 
-__webpack_require__(223);
+__webpack_require__(226);
 
 __webpack_require__(75);
 
 __webpack_require__(74);
 
-__webpack_require__(224);
+__webpack_require__(227);
 
 __webpack_require__(73);
 
@@ -3510,7 +3510,7 @@ _reactDom2.default.render(_react2.default.createElement(
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var m=__webpack_require__(6),n=__webpack_require__(11),p=__webpack_require__(4);
+var m=__webpack_require__(6),n=__webpack_require__(12),p=__webpack_require__(4);
 function q(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var r={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function t(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}t.prototype.isReactComponent={};t.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?q("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};t.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function u(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}function v(){}v.prototype=t.prototype;var w=u.prototype=new v;w.constructor=u;m(w,t.prototype);w.isPureReactComponent=!0;function x(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}var y=x.prototype=new v;y.constructor=x;m(y,t.prototype);y.unstable_isAsyncReactComponent=!0;y.render=function(){return this.props.children};
@@ -3548,8 +3548,8 @@ if (process.env.NODE_ENV !== "production") {
 
 var _assign = __webpack_require__(6);
 var invariant = __webpack_require__(7);
-var emptyObject = __webpack_require__(11);
-var warning = __webpack_require__(12);
+var emptyObject = __webpack_require__(12);
+var warning = __webpack_require__(13);
 var emptyFunction = __webpack_require__(4);
 var checkPropTypes = __webpack_require__(24);
 
@@ -4893,7 +4893,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),m=__webpack_require__(39),A=__webpack_require__(6),B=__webpack_require__(4),ca=__webpack_require__(40),da=__webpack_require__(41),ea=__webpack_require__(42),ha=__webpack_require__(43),ia=__webpack_require__(44),C=__webpack_require__(11);
+var aa=__webpack_require__(1),m=__webpack_require__(39),A=__webpack_require__(6),B=__webpack_require__(4),ca=__webpack_require__(40),da=__webpack_require__(41),ea=__webpack_require__(42),ha=__webpack_require__(43),ia=__webpack_require__(44),C=__webpack_require__(12);
 function D(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:D("227");
 var la={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function qa(a,b){return(a&b)===b}
 var ra={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ra,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){sa.hasOwnProperty(f)?D("48",f):void 0;var g=f.toLowerCase(),k=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:qa(k,b.MUST_USE_PROPERTY),
@@ -5189,7 +5189,7 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(1);
 var invariant = __webpack_require__(7);
-var warning = __webpack_require__(12);
+var warning = __webpack_require__(13);
 var ExecutionEnvironment = __webpack_require__(39);
 var _assign = __webpack_require__(6);
 var emptyFunction$1 = __webpack_require__(4);
@@ -5198,7 +5198,7 @@ var getActiveElement = __webpack_require__(41);
 var shallowEqual = __webpack_require__(42);
 var containsNode = __webpack_require__(43);
 var focusNode = __webpack_require__(44);
-var emptyObject = __webpack_require__(11);
+var emptyObject = __webpack_require__(12);
 var checkPropTypes = __webpack_require__(24);
 var hyphenateStyleName = __webpack_require__(84);
 var camelizeStyleName = __webpack_require__(86);
@@ -21406,7 +21406,7 @@ function createProvider() {
 
 var emptyFunction = __webpack_require__(4);
 var invariant = __webpack_require__(7);
-var warning = __webpack_require__(12);
+var warning = __webpack_require__(13);
 var assign = __webpack_require__(6);
 
 var ReactPropTypesSecret = __webpack_require__(25);
@@ -22666,7 +22666,11 @@ var _Background = __webpack_require__(179);
 
 var _Background2 = _interopRequireDefault(_Background);
 
-__webpack_require__(210);
+var _CursorDisplay = __webpack_require__(210);
+
+var _CursorDisplay2 = _interopRequireDefault(_CursorDisplay);
+
+__webpack_require__(213);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22700,7 +22704,12 @@ var Layout = function (_Component) {
           'div',
           { className: 'main-view-container' },
           _react2.default.createElement(_Background2.default, { bgColor: '#FF00FF' }),
-          _react2.default.createElement(_MainView2.default, null)
+          _react2.default.createElement(_MainView2.default, null),
+          _react2.default.createElement(
+            'div',
+            { className: 'bottom-right' },
+            _react2.default.createElement(_CursorDisplay2.default, null)
+          )
         )
       );
     }
@@ -22736,7 +22745,7 @@ var _reactKeydown2 = _interopRequireDefault(_reactKeydown);
 
 var _redux = __webpack_require__(17);
 
-var _reactRedux = __webpack_require__(13);
+var _reactRedux = __webpack_require__(8);
 
 var _Menu = __webpack_require__(67);
 
@@ -23209,8 +23218,8 @@ module.exports = __webpack_require__(21).Symbol;
 
 // ECMAScript 6 symbols shim
 var global = __webpack_require__(5);
-var has = __webpack_require__(8);
-var DESCRIPTORS = __webpack_require__(9);
+var has = __webpack_require__(9);
+var DESCRIPTORS = __webpack_require__(10);
 var $export = __webpack_require__(123);
 var redefine = __webpack_require__(33);
 var META = __webpack_require__(126).KEY;
@@ -23230,7 +23239,7 @@ var createDesc = __webpack_require__(32);
 var _create = __webpack_require__(136);
 var gOPNExt = __webpack_require__(139);
 var $GOPD = __webpack_require__(140);
-var $DP = __webpack_require__(10);
+var $DP = __webpack_require__(11);
 var $keys = __webpack_require__(35);
 var gOPD = $GOPD.f;
 var dP = $DP.f;
@@ -23533,8 +23542,8 @@ module.exports = function (it) {
 
 var META = __webpack_require__(14)('meta');
 var isObject = __webpack_require__(23);
-var has = __webpack_require__(8);
-var setDesc = __webpack_require__(10).f;
+var has = __webpack_require__(9);
+var setDesc = __webpack_require__(11).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
@@ -23590,8 +23599,8 @@ var meta = module.exports = {
 /* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var def = __webpack_require__(10).f;
-var has = __webpack_require__(8);
+var def = __webpack_require__(11).f;
+var has = __webpack_require__(9);
 var TAG = __webpack_require__(15)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -23607,7 +23616,7 @@ var global = __webpack_require__(5);
 var core = __webpack_require__(21);
 var LIBRARY = __webpack_require__(59);
 var wksExt = __webpack_require__(58);
-var defineProperty = __webpack_require__(10).f;
+var defineProperty = __webpack_require__(11).f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
   if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
@@ -23774,11 +23783,11 @@ module.exports = Object.create || function create(O, Properties) {
 /* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(10);
+var dP = __webpack_require__(11);
 var anObject = __webpack_require__(22);
 var getKeys = __webpack_require__(35);
 
-module.exports = __webpack_require__(9) ? Object.defineProperties : function defineProperties(O, Properties) {
+module.exports = __webpack_require__(10) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var keys = getKeys(Properties);
   var length = keys.length;
@@ -23830,11 +23839,11 @@ var pIE = __webpack_require__(38);
 var createDesc = __webpack_require__(32);
 var toIObject = __webpack_require__(16);
 var toPrimitive = __webpack_require__(31);
-var has = __webpack_require__(8);
+var has = __webpack_require__(9);
 var IE8_DOM_DEFINE = __webpack_require__(56);
 var gOPD = Object.getOwnPropertyDescriptor;
 
-exports.f = __webpack_require__(9) ? gOPD : function getOwnPropertyDescriptor(O, P) {
+exports.f = __webpack_require__(10) ? gOPD : function getOwnPropertyDescriptor(O, P) {
   O = toIObject(O);
   P = toPrimitive(P, true);
   if (IE8_DOM_DEFINE) try {
@@ -24401,7 +24410,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(13);
+var _reactRedux = __webpack_require__(8);
 
 var _Home = __webpack_require__(152);
 
@@ -24884,7 +24893,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(13);
+var _reactRedux = __webpack_require__(8);
 
 var _reactKeydown = __webpack_require__(54);
 
@@ -27020,11 +27029,11 @@ module.exports = exports['default'];
 
 var _assign = __webpack_require__(6);
 
-var emptyObject = __webpack_require__(11);
+var emptyObject = __webpack_require__(12);
 var _invariant = __webpack_require__(7);
 
 if (process.env.NODE_ENV !== 'production') {
-  var warning = __webpack_require__(12);
+  var warning = __webpack_require__(13);
 }
 
 var MIXINS_KEY = 'mixins';
@@ -28201,7 +28210,7 @@ var _granim = __webpack_require__(180);
 
 var _granim2 = _interopRequireDefault(_granim);
 
-var _reactRedux = __webpack_require__(13);
+var _reactRedux = __webpack_require__(8);
 
 __webpack_require__(208);
 
@@ -29319,10 +29328,145 @@ exports.push([module.i, ".background {\n  position: absolute;\n  width: 100%;\n 
 /* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(8);
+
+__webpack_require__(211);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CursorDisplay = function (_Component) {
+  _inherits(CursorDisplay, _Component);
+
+  function CursorDisplay() {
+    _classCallCheck(this, CursorDisplay);
+
+    var _this = _possibleConstructorReturn(this, (CursorDisplay.__proto__ || Object.getPrototypeOf(CursorDisplay)).call(this));
+
+    _this.state = {
+      up: "key key-white",
+      left: "key key-white",
+      down: "key key-white",
+      right: "key key-white"
+    };
+    return _this;
+  }
+
+  _createClass(CursorDisplay, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.highlightArrows(this.props.menu.active);
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.highlightArrows(nextProps.menu.active);
+    }
+  }, {
+    key: 'getArrows',
+    value: function getArrows(activeMenu) {
+      switch (activeMenu) {
+        case 'projects':
+          return ['up', 'left', 'down', 'right'];
+        case 'home':
+        case 'about':
+        case 'contact':
+        default:
+          return ['up', 'down'];
+      }
+    }
+  }, {
+    key: 'highlightArrows',
+    value: function highlightArrows(activeMenu) {
+      var activeArrows = this.getArrows(activeMenu);
+      var allArrows = Object.keys(this.state);
+      var classes = allArrows.reduce(function (agg, arrow) {
+        if (activeArrows.indexOf(arrow) != -1) {
+          agg[arrow] = "key key-white active";
+        } else {
+          agg[arrow] = "key key-white";
+        }
+        return agg;
+      }, {});
+      this.setState(classes);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'cursor-display' },
+        _react2.default.createElement(
+          'div',
+          { className: 'key-row' },
+          _react2.default.createElement('div', { className: 'key' }),
+          _react2.default.createElement(
+            'div',
+            { className: this.state.up },
+            _react2.default.createElement('span', { className: 'typcn typcn-arrow-up' })
+          ),
+          _react2.default.createElement('div', { className: 'key' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'key-row' },
+          _react2.default.createElement(
+            'div',
+            { className: this.state.left },
+            _react2.default.createElement('span', { className: 'typcn typcn-arrow-left' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: this.state.down },
+            _react2.default.createElement('span', { className: 'typcn typcn-arrow-down' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: this.state.right },
+            _react2.default.createElement('span', { className: 'typcn typcn-arrow-right' })
+          )
+        )
+      );
+    }
+  }]);
+
+  return CursorDisplay;
+}(_react.Component);
+
+function mapStateToProps(state) {
+  return {
+    menu: state.menu
+  };
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps)(CursorDisplay);
+
+/***/ }),
+/* 211 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(211);
+var content = __webpack_require__(212);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -29347,7 +29491,7 @@ if(false) {
 }
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(undefined);
@@ -29355,13 +29499,58 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, ".layout {\n  height: 100%; }\n  .layout .sidebar-container {\n    height: 100%;\n    width: 350px;\n    position: absolute;\n    left: 0px;\n    top: 0px;\n    z-index: 20; }\n  .layout .main-view-container {\n    width: 100%;\n    height: 100%;\n    z-index: 18; }\n", ""]);
+exports.push([module.i, ".cursor-display {\n  margin: 20px; }\n  .cursor-display .key-row {\n    content: \"\";\n    clear: both;\n    display: table;\n    margin: 10px; }\n  .cursor-display .key {\n    height: 60px;\n    width: 60px;\n    display: inline-block;\n    float: left;\n    margin-left: 10px;\n    margin-right: 10px;\n    text-align: center; }\n    .cursor-display .key .typcn {\n      font-size: 42px; }\n  .cursor-display .key-white {\n    background-color: rgba(255, 255, 255, 0.2);\n    opacity: 0.2;\n    border-radius: 5px; }\n    .cursor-display .key-white.active {\n      background-color: rgba(255, 255, 255, 0.6);\n      opacity: 1; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 212 */
+/* 213 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(214);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(3)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./style.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./style.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".layout {\n  height: 100%; }\n  .layout .sidebar-container {\n    height: 100%;\n    width: 350px;\n    position: absolute;\n    left: 0px;\n    top: 0px;\n    z-index: 20; }\n  .layout .main-view-container {\n    width: 100%;\n    height: 100%;\n    z-index: 18;\n    position: relative; }\n  .layout .bottom-right {\n    position: absolute;\n    right: 0px;\n    bottom: 0px;\n    z-index: 22; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29386,13 +29575,13 @@ var allReducers = (0, _redux.combineReducers)({
 exports.default = allReducers;
 
 /***/ }),
-/* 213 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(214);
+var content = __webpack_require__(217);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -29417,60 +29606,18 @@ if(false) {
 }
 
 /***/ }),
-/* 214 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(undefined);
-// imports
-exports.i(__webpack_require__(215), "");
-exports.i(__webpack_require__(216), "");
-exports.i(__webpack_require__(217), "");
-exports.i(__webpack_require__(218), "");
-
-// module
-exports.push([module.i, "html, body, #app {\n  height: 100%;\n  padding: 0px;\n  border: 0px;\n  margin: 0px;\n  overflow: hidden; }\n\nbody {\n  font-family: 'Dosis';\n  color: #FFFFFF;\n  font-size: 22px; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 215 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n    font-family: 'ailerons';\n    src: url(" + __webpack_require__(70) + ") format('woff2'),\n         url(" + __webpack_require__(71) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 216 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n    font-family: 'dosis';\n    src: url(" + __webpack_require__(72) + ") format('woff2'),\n         url(" + __webpack_require__(73) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}", ""]);
-
-// exports
-
-
-/***/ }),
 /* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(undefined);
 // imports
-
+exports.i(__webpack_require__(218), "");
+exports.i(__webpack_require__(219), "");
+exports.i(__webpack_require__(220), "");
+exports.i(__webpack_require__(221), "");
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'marck-script';\n    src: url(" + __webpack_require__(74) + ") format('woff2'),\n         url(" + __webpack_require__(75) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}", ""]);
+exports.push([module.i, "html, body, #app {\n  height: 100%;\n  padding: 0px;\n  border: 0px;\n  margin: 0px;\n  overflow: hidden; }\n\nbody {\n  font-family: 'Dosis';\n  color: #FFFFFF;\n  font-size: 22px; }\n", ""]);
 
 // exports
 
@@ -29484,7 +29631,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "@charset 'UTF-8';\n \n/* @FONT-FACE loads font into browser */\n@font-face {\n  font-family: 'typicons';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(76) + ");\n  src: url(" + __webpack_require__(76) + "?#iefix) format('embedded-opentype'),\n       url(" + __webpack_require__(219) + ") format('woff'),\n       url(" + __webpack_require__(220) + ") format('truetype'),\n       url(" + __webpack_require__(221) + "#typicons) format('svg');\n}\n \n/* :before psuedo-selector inserts and styles icon */\n.typcn:before {\n  font-family: 'typicons';\n  font-style: normal;\n  font-weight: normal;\n  speak: none;\n  display: inline-block;\n  text-decoration: inherit;\n  width: 1em;\n  height: 1em;\n  font-size: 1em;\n  text-align: center;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n}\n \n/* Code for individual icons */ \n.typcn-adjust-brightness:before { \n  content: '\\E000'; /* '' */\n} \n.typcn-adjust-contrast:before { \n  content: '\\E001'; /* '' */\n} \n.typcn-anchor-outline:before { \n  content: '\\E002'; /* '' */\n} \n.typcn-anchor:before { \n  content: '\\E003'; /* '' */\n} \n.typcn-archive:before { \n  content: '\\E004'; /* '' */\n} \n.typcn-arrow-back-outline:before { \n  content: '\\E005'; /* '' */\n} \n.typcn-arrow-back:before { \n  content: '\\E006'; /* '' */\n} \n.typcn-arrow-down-outline:before { \n  content: '\\E007'; /* '' */\n} \n.typcn-arrow-down-thick:before { \n  content: '\\E008'; /* '' */\n} \n.typcn-arrow-down:before { \n  content: '\\E009'; /* '' */\n} \n.typcn-arrow-forward-outline:before { \n  content: '\\E00A'; /* '' */\n} \n.typcn-arrow-forward:before { \n  content: '\\E00B'; /* '' */\n} \n.typcn-arrow-left-outline:before { \n  content: '\\E00C'; /* '' */\n} \n.typcn-arrow-left-thick:before { \n  content: '\\E00D'; /* '' */\n} \n.typcn-arrow-left:before { \n  content: '\\E00E'; /* '' */\n} \n.typcn-arrow-loop-outline:before { \n  content: '\\E00F'; /* '' */\n} \n.typcn-arrow-loop:before { \n  content: '\\E010'; /* '' */\n} \n.typcn-arrow-maximise-outline:before { \n  content: '\\E011'; /* '' */\n} \n.typcn-arrow-maximise:before { \n  content: '\\E012'; /* '' */\n} \n.typcn-arrow-minimise-outline:before { \n  content: '\\E013'; /* '' */\n} \n.typcn-arrow-minimise:before { \n  content: '\\E014'; /* '' */\n} \n.typcn-arrow-move-outline:before { \n  content: '\\E015'; /* '' */\n} \n.typcn-arrow-move:before { \n  content: '\\E016'; /* '' */\n} \n.typcn-arrow-repeat-outline:before { \n  content: '\\E017'; /* '' */\n} \n.typcn-arrow-repeat:before { \n  content: '\\E018'; /* '' */\n} \n.typcn-arrow-right-outline:before { \n  content: '\\E019'; /* '' */\n} \n.typcn-arrow-right-thick:before { \n  content: '\\E01A'; /* '' */\n} \n.typcn-arrow-right:before { \n  content: '\\E01B'; /* '' */\n} \n.typcn-arrow-shuffle:before { \n  content: '\\E01C'; /* '' */\n} \n.typcn-arrow-sorted-down:before { \n  content: '\\E01D'; /* '' */\n} \n.typcn-arrow-sorted-up:before { \n  content: '\\E01E'; /* '' */\n} \n.typcn-arrow-sync-outline:before { \n  content: '\\E01F'; /* '' */\n} \n.typcn-arrow-sync:before { \n  content: '\\E020'; /* '' */\n} \n.typcn-arrow-unsorted:before { \n  content: '\\E021'; /* '' */\n} \n.typcn-arrow-up-outline:before { \n  content: '\\E022'; /* '' */\n} \n.typcn-arrow-up-thick:before { \n  content: '\\E023'; /* '' */\n} \n.typcn-arrow-up:before { \n  content: '\\E024'; /* '' */\n} \n.typcn-at:before { \n  content: '\\E025'; /* '' */\n} \n.typcn-attachment-outline:before { \n  content: '\\E026'; /* '' */\n} \n.typcn-attachment:before { \n  content: '\\E027'; /* '' */\n} \n.typcn-backspace-outline:before { \n  content: '\\E028'; /* '' */\n} \n.typcn-backspace:before { \n  content: '\\E029'; /* '' */\n} \n.typcn-battery-charge:before { \n  content: '\\E02A'; /* '' */\n} \n.typcn-battery-full:before { \n  content: '\\E02B'; /* '' */\n} \n.typcn-battery-high:before { \n  content: '\\E02C'; /* '' */\n} \n.typcn-battery-low:before { \n  content: '\\E02D'; /* '' */\n} \n.typcn-battery-mid:before { \n  content: '\\E02E'; /* '' */\n} \n.typcn-beaker:before { \n  content: '\\E02F'; /* '' */\n} \n.typcn-beer:before { \n  content: '\\E030'; /* '' */\n} \n.typcn-bell:before { \n  content: '\\E031'; /* '' */\n} \n.typcn-book:before { \n  content: '\\E032'; /* '' */\n} \n.typcn-bookmark:before { \n  content: '\\E033'; /* '' */\n} \n.typcn-briefcase:before { \n  content: '\\E034'; /* '' */\n} \n.typcn-brush:before { \n  content: '\\E035'; /* '' */\n} \n.typcn-business-card:before { \n  content: '\\E036'; /* '' */\n} \n.typcn-calculator:before { \n  content: '\\E037'; /* '' */\n} \n.typcn-calendar-outline:before { \n  content: '\\E038'; /* '' */\n} \n.typcn-calendar:before { \n  content: '\\E039'; /* '' */\n} \n.typcn-camera-outline:before { \n  content: '\\E03A'; /* '' */\n} \n.typcn-camera:before { \n  content: '\\E03B'; /* '' */\n} \n.typcn-cancel-outline:before { \n  content: '\\E03C'; /* '' */\n} \n.typcn-cancel:before { \n  content: '\\E03D'; /* '' */\n} \n.typcn-chart-area-outline:before { \n  content: '\\E03E'; /* '' */\n} \n.typcn-chart-area:before { \n  content: '\\E03F'; /* '' */\n} \n.typcn-chart-bar-outline:before { \n  content: '\\E040'; /* '' */\n} \n.typcn-chart-bar:before { \n  content: '\\E041'; /* '' */\n} \n.typcn-chart-line-outline:before { \n  content: '\\E042'; /* '' */\n} \n.typcn-chart-line:before { \n  content: '\\E043'; /* '' */\n} \n.typcn-chart-pie-outline:before { \n  content: '\\E044'; /* '' */\n} \n.typcn-chart-pie:before { \n  content: '\\E045'; /* '' */\n} \n.typcn-chevron-left-outline:before { \n  content: '\\E046'; /* '' */\n} \n.typcn-chevron-left:before { \n  content: '\\E047'; /* '' */\n} \n.typcn-chevron-right-outline:before { \n  content: '\\E048'; /* '' */\n} \n.typcn-chevron-right:before { \n  content: '\\E049'; /* '' */\n} \n.typcn-clipboard:before { \n  content: '\\E04A'; /* '' */\n} \n.typcn-cloud-storage:before { \n  content: '\\E04B'; /* '' */\n} \n.typcn-cloud-storage-outline:before { \n  content: '\\E054'; /* '' */\n} \n.typcn-code-outline:before { \n  content: '\\E04C'; /* '' */\n} \n.typcn-code:before { \n  content: '\\E04D'; /* '' */\n} \n.typcn-coffee:before { \n  content: '\\E04E'; /* '' */\n} \n.typcn-cog-outline:before { \n  content: '\\E04F'; /* '' */\n} \n.typcn-cog:before { \n  content: '\\E050'; /* '' */\n} \n.typcn-compass:before { \n  content: '\\E051'; /* '' */\n} \n.typcn-contacts:before { \n  content: '\\E052'; /* '' */\n} \n.typcn-credit-card:before { \n  content: '\\E053'; /* '' */\n} \n.typcn-css3:before { \n  content: '\\E055'; /* '' */\n} \n.typcn-database:before { \n  content: '\\E056'; /* '' */\n} \n.typcn-delete-outline:before { \n  content: '\\E057'; /* '' */\n} \n.typcn-delete:before { \n  content: '\\E058'; /* '' */\n} \n.typcn-device-desktop:before { \n  content: '\\E059'; /* '' */\n} \n.typcn-device-laptop:before { \n  content: '\\E05A'; /* '' */\n} \n.typcn-device-phone:before { \n  content: '\\E05B'; /* '' */\n} \n.typcn-device-tablet:before { \n  content: '\\E05C'; /* '' */\n} \n.typcn-directions:before { \n  content: '\\E05D'; /* '' */\n} \n.typcn-divide-outline:before { \n  content: '\\E05E'; /* '' */\n} \n.typcn-divide:before { \n  content: '\\E05F'; /* '' */\n} \n.typcn-document-add:before { \n  content: '\\E060'; /* '' */\n} \n.typcn-document-delete:before { \n  content: '\\E061'; /* '' */\n} \n.typcn-document-text:before { \n  content: '\\E062'; /* '' */\n} \n.typcn-document:before { \n  content: '\\E063'; /* '' */\n} \n.typcn-download-outline:before { \n  content: '\\E064'; /* '' */\n} \n.typcn-download:before { \n  content: '\\E065'; /* '' */\n} \n.typcn-dropbox:before { \n  content: '\\E066'; /* '' */\n} \n.typcn-edit:before { \n  content: '\\E067'; /* '' */\n} \n.typcn-eject-outline:before { \n  content: '\\E068'; /* '' */\n} \n.typcn-eject:before { \n  content: '\\E069'; /* '' */\n} \n.typcn-equals-outline:before { \n  content: '\\E06A'; /* '' */\n} \n.typcn-equals:before { \n  content: '\\E06B'; /* '' */\n} \n.typcn-export-outline:before { \n  content: '\\E06C'; /* '' */\n} \n.typcn-export:before { \n  content: '\\E06D'; /* '' */\n} \n.typcn-eye-outline:before { \n  content: '\\E06E'; /* '' */\n} \n.typcn-eye:before { \n  content: '\\E06F'; /* '' */\n} \n.typcn-feather:before { \n  content: '\\E070'; /* '' */\n} \n.typcn-film:before { \n  content: '\\E071'; /* '' */\n} \n.typcn-filter:before { \n  content: '\\E072'; /* '' */\n} \n.typcn-flag-outline:before { \n  content: '\\E073'; /* '' */\n} \n.typcn-flag:before { \n  content: '\\E074'; /* '' */\n} \n.typcn-flash-outline:before { \n  content: '\\E075'; /* '' */\n} \n.typcn-flash:before { \n  content: '\\E076'; /* '' */\n} \n.typcn-flow-children:before { \n  content: '\\E077'; /* '' */\n} \n.typcn-flow-merge:before { \n  content: '\\E078'; /* '' */\n} \n.typcn-flow-parallel:before { \n  content: '\\E079'; /* '' */\n} \n.typcn-flow-switch:before { \n  content: '\\E07A'; /* '' */\n} \n.typcn-folder-add:before { \n  content: '\\E07B'; /* '' */\n} \n.typcn-folder-delete:before { \n  content: '\\E07C'; /* '' */\n} \n.typcn-folder-open:before { \n  content: '\\E07D'; /* '' */\n} \n.typcn-folder:before { \n  content: '\\E07E'; /* '' */\n} \n.typcn-gift:before { \n  content: '\\E07F'; /* '' */\n} \n.typcn-globe-outline:before { \n  content: '\\E080'; /* '' */\n} \n.typcn-globe:before { \n  content: '\\E081'; /* '' */\n} \n.typcn-group-outline:before { \n  content: '\\E082'; /* '' */\n} \n.typcn-group:before { \n  content: '\\E083'; /* '' */\n} \n.typcn-headphones:before { \n  content: '\\E084'; /* '' */\n} \n.typcn-heart-full-outline:before { \n  content: '\\E085'; /* '' */\n} \n.typcn-heart-half-outline:before { \n  content: '\\E086'; /* '' */\n} \n.typcn-heart-outline:before { \n  content: '\\E087'; /* '' */\n} \n.typcn-heart:before { \n  content: '\\E088'; /* '' */\n} \n.typcn-home-outline:before { \n  content: '\\E089'; /* '' */\n} \n.typcn-home:before { \n  content: '\\E08A'; /* '' */\n} \n.typcn-html5:before { \n  content: '\\E08B'; /* '' */\n} \n.typcn-image-outline:before { \n  content: '\\E08C'; /* '' */\n} \n.typcn-image:before { \n  content: '\\E08D'; /* '' */\n} \n.typcn-infinity-outline:before { \n  content: '\\E08E'; /* '' */\n} \n.typcn-infinity:before { \n  content: '\\E08F'; /* '' */\n} \n.typcn-info-large-outline:before { \n  content: '\\E090'; /* '' */\n} \n.typcn-info-large:before { \n  content: '\\E091'; /* '' */\n} \n.typcn-info-outline:before { \n  content: '\\E092'; /* '' */\n} \n.typcn-info:before { \n  content: '\\E093'; /* '' */\n} \n.typcn-input-checked-outline:before { \n  content: '\\E094'; /* '' */\n} \n.typcn-input-checked:before { \n  content: '\\E095'; /* '' */\n} \n.typcn-key-outline:before { \n  content: '\\E096'; /* '' */\n} \n.typcn-key:before { \n  content: '\\E097'; /* '' */\n} \n.typcn-keyboard:before { \n  content: '\\E098'; /* '' */\n} \n.typcn-leaf:before { \n  content: '\\E099'; /* '' */\n} \n.typcn-lightbulb:before { \n  content: '\\E09A'; /* '' */\n} \n.typcn-link-outline:before { \n  content: '\\E09B'; /* '' */\n} \n.typcn-link:before { \n  content: '\\E09C'; /* '' */\n} \n.typcn-location-arrow-outline:before { \n  content: '\\E09D'; /* '' */\n} \n.typcn-location-arrow:before { \n  content: '\\E09E'; /* '' */\n} \n.typcn-location-outline:before { \n  content: '\\E09F'; /* '' */\n} \n.typcn-location:before { \n  content: '\\E0A0'; /* '' */\n} \n.typcn-lock-closed-outline:before { \n  content: '\\E0A1'; /* '' */\n} \n.typcn-lock-closed:before { \n  content: '\\E0A2'; /* '' */\n} \n.typcn-lock-open-outline:before { \n  content: '\\E0A3'; /* '' */\n} \n.typcn-lock-open:before { \n  content: '\\E0A4'; /* '' */\n} \n.typcn-mail:before { \n  content: '\\E0A5'; /* '' */\n} \n.typcn-map:before { \n  content: '\\E0A6'; /* '' */\n} \n.typcn-media-eject-outline:before { \n  content: '\\E0A7'; /* '' */\n} \n.typcn-media-eject:before { \n  content: '\\E0A8'; /* '' */\n} \n.typcn-media-fast-forward-outline:before { \n  content: '\\E0A9'; /* '' */\n} \n.typcn-media-fast-forward:before { \n  content: '\\E0AA'; /* '' */\n} \n.typcn-media-pause-outline:before { \n  content: '\\E0AB'; /* '' */\n} \n.typcn-media-pause:before { \n  content: '\\E0AC'; /* '' */\n} \n.typcn-media-play-outline:before { \n  content: '\\E0AD'; /* '' */\n} \n.typcn-media-play-reverse-outline:before { \n  content: '\\E0AE'; /* '' */\n} \n.typcn-media-play-reverse:before { \n  content: '\\E0AF'; /* '' */\n} \n.typcn-media-play:before { \n  content: '\\E0B0'; /* '' */\n} \n.typcn-media-record-outline:before { \n  content: '\\E0B1'; /* '' */\n} \n.typcn-media-record:before { \n  content: '\\E0B2'; /* '' */\n} \n.typcn-media-rewind-outline:before { \n  content: '\\E0B3'; /* '' */\n} \n.typcn-media-rewind:before { \n  content: '\\E0B4'; /* '' */\n} \n.typcn-media-stop-outline:before { \n  content: '\\E0B5'; /* '' */\n} \n.typcn-media-stop:before { \n  content: '\\E0B6'; /* '' */\n} \n.typcn-message-typing:before { \n  content: '\\E0B7'; /* '' */\n} \n.typcn-message:before { \n  content: '\\E0B8'; /* '' */\n} \n.typcn-messages:before { \n  content: '\\E0B9'; /* '' */\n} \n.typcn-microphone-outline:before { \n  content: '\\E0BA'; /* '' */\n} \n.typcn-microphone:before { \n  content: '\\E0BB'; /* '' */\n} \n.typcn-minus-outline:before { \n  content: '\\E0BC'; /* '' */\n} \n.typcn-minus:before { \n  content: '\\E0BD'; /* '' */\n} \n.typcn-mortar-board:before { \n  content: '\\E0BE'; /* '' */\n} \n.typcn-news:before { \n  content: '\\E0BF'; /* '' */\n} \n.typcn-notes-outline:before { \n  content: '\\E0C0'; /* '' */\n} \n.typcn-notes:before { \n  content: '\\E0C1'; /* '' */\n} \n.typcn-pen:before { \n  content: '\\E0C2'; /* '' */\n} \n.typcn-pencil:before { \n  content: '\\E0C3'; /* '' */\n} \n.typcn-phone-outline:before { \n  content: '\\E0C4'; /* '' */\n} \n.typcn-phone:before { \n  content: '\\E0C5'; /* '' */\n} \n.typcn-pi-outline:before { \n  content: '\\E0C6'; /* '' */\n} \n.typcn-pi:before { \n  content: '\\E0C7'; /* '' */\n} \n.typcn-pin-outline:before { \n  content: '\\E0C8'; /* '' */\n} \n.typcn-pin:before { \n  content: '\\E0C9'; /* '' */\n} \n.typcn-pipette:before { \n  content: '\\E0CA'; /* '' */\n} \n.typcn-plane-outline:before { \n  content: '\\E0CB'; /* '' */\n} \n.typcn-plane:before { \n  content: '\\E0CC'; /* '' */\n} \n.typcn-plug:before { \n  content: '\\E0CD'; /* '' */\n} \n.typcn-plus-outline:before { \n  content: '\\E0CE'; /* '' */\n} \n.typcn-plus:before { \n  content: '\\E0CF'; /* '' */\n} \n.typcn-point-of-interest-outline:before { \n  content: '\\E0D0'; /* '' */\n} \n.typcn-point-of-interest:before { \n  content: '\\E0D1'; /* '' */\n} \n.typcn-power-outline:before { \n  content: '\\E0D2'; /* '' */\n} \n.typcn-power:before { \n  content: '\\E0D3'; /* '' */\n} \n.typcn-printer:before { \n  content: '\\E0D4'; /* '' */\n} \n.typcn-puzzle-outline:before { \n  content: '\\E0D5'; /* '' */\n} \n.typcn-puzzle:before { \n  content: '\\E0D6'; /* '' */\n} \n.typcn-radar-outline:before { \n  content: '\\E0D7'; /* '' */\n} \n.typcn-radar:before { \n  content: '\\E0D8'; /* '' */\n} \n.typcn-refresh-outline:before { \n  content: '\\E0D9'; /* '' */\n} \n.typcn-refresh:before { \n  content: '\\E0DA'; /* '' */\n} \n.typcn-rss-outline:before { \n  content: '\\E0DB'; /* '' */\n} \n.typcn-rss:before { \n  content: '\\E0DC'; /* '' */\n} \n.typcn-scissors-outline:before { \n  content: '\\E0DD'; /* '' */\n} \n.typcn-scissors:before { \n  content: '\\E0DE'; /* '' */\n} \n.typcn-shopping-bag:before { \n  content: '\\E0DF'; /* '' */\n} \n.typcn-shopping-cart:before { \n  content: '\\E0E0'; /* '' */\n} \n.typcn-social-at-circular:before { \n  content: '\\E0E1'; /* '' */\n} \n.typcn-social-dribbble-circular:before { \n  content: '\\E0E2'; /* '' */\n} \n.typcn-social-dribbble:before { \n  content: '\\E0E3'; /* '' */\n} \n.typcn-social-facebook-circular:before { \n  content: '\\E0E4'; /* '' */\n} \n.typcn-social-facebook:before { \n  content: '\\E0E5'; /* '' */\n} \n.typcn-social-flickr-circular:before { \n  content: '\\E0E6'; /* '' */\n} \n.typcn-social-flickr:before { \n  content: '\\E0E7'; /* '' */\n} \n.typcn-social-github-circular:before { \n  content: '\\E0E8'; /* '' */\n} \n.typcn-social-github:before { \n  content: '\\E0E9'; /* '' */\n} \n.typcn-social-google-plus-circular:before { \n  content: '\\E0EA'; /* '' */\n} \n.typcn-social-google-plus:before { \n  content: '\\E0EB'; /* '' */\n} \n.typcn-social-instagram-circular:before { \n  content: '\\E0EC'; /* '' */\n} \n.typcn-social-instagram:before { \n  content: '\\E0ED'; /* '' */\n} \n.typcn-social-last-fm-circular:before { \n  content: '\\E0EE'; /* '' */\n} \n.typcn-social-last-fm:before { \n  content: '\\E0EF'; /* '' */\n} \n.typcn-social-linkedin-circular:before { \n  content: '\\E0F0'; /* '' */\n} \n.typcn-social-linkedin:before { \n  content: '\\E0F1'; /* '' */\n} \n.typcn-social-pinterest-circular:before { \n  content: '\\E0F2'; /* '' */\n} \n.typcn-social-pinterest:before { \n  content: '\\E0F3'; /* '' */\n} \n.typcn-social-skype-outline:before { \n  content: '\\E0F4'; /* '' */\n} \n.typcn-social-skype:before { \n  content: '\\E0F5'; /* '' */\n} \n.typcn-social-tumbler-circular:before { \n  content: '\\E0F6'; /* '' */\n} \n.typcn-social-tumbler:before { \n  content: '\\E0F7'; /* '' */\n} \n.typcn-social-twitter-circular:before { \n  content: '\\E0F8'; /* '' */\n} \n.typcn-social-twitter:before { \n  content: '\\E0F9'; /* '' */\n} \n.typcn-social-vimeo-circular:before { \n  content: '\\E0FA'; /* '' */\n} \n.typcn-social-vimeo:before { \n  content: '\\E0FB'; /* '' */\n} \n.typcn-social-youtube-circular:before { \n  content: '\\E0FC'; /* '' */\n} \n.typcn-social-youtube:before { \n  content: '\\E0FD'; /* '' */\n} \n.typcn-sort-alphabetically-outline:before { \n  content: '\\E0FE'; /* '' */\n} \n.typcn-sort-alphabetically:before { \n  content: '\\E0FF'; /* '' */\n} \n.typcn-sort-numerically-outline:before { \n  content: '\\E100'; /* '' */\n} \n.typcn-sort-numerically:before { \n  content: '\\E101'; /* '' */\n} \n.typcn-spanner-outline:before { \n  content: '\\E102'; /* '' */\n} \n.typcn-spanner:before { \n  content: '\\E103'; /* '' */\n} \n.typcn-spiral:before { \n  content: '\\E104'; /* '' */\n} \n.typcn-star-full-outline:before { \n  content: '\\E105'; /* '' */\n} \n.typcn-star-half-outline:before { \n  content: '\\E106'; /* '' */\n} \n.typcn-star-half:before { \n  content: '\\E107'; /* '' */\n} \n.typcn-star-outline:before { \n  content: '\\E108'; /* '' */\n} \n.typcn-star:before { \n  content: '\\E109'; /* '' */\n} \n.typcn-starburst-outline:before { \n  content: '\\E10A'; /* '' */\n} \n.typcn-starburst:before { \n  content: '\\E10B'; /* '' */\n} \n.typcn-stopwatch:before { \n  content: '\\E10C'; /* '' */\n} \n.typcn-support:before { \n  content: '\\E10D'; /* '' */\n} \n.typcn-tabs-outline:before { \n  content: '\\E10E'; /* '' */\n} \n.typcn-tag:before { \n  content: '\\E10F'; /* '' */\n} \n.typcn-tags:before { \n  content: '\\E110'; /* '' */\n} \n.typcn-th-large-outline:before { \n  content: '\\E111'; /* '' */\n} \n.typcn-th-large:before { \n  content: '\\E112'; /* '' */\n} \n.typcn-th-list-outline:before { \n  content: '\\E113'; /* '' */\n} \n.typcn-th-list:before { \n  content: '\\E114'; /* '' */\n} \n.typcn-th-menu-outline:before { \n  content: '\\E115'; /* '' */\n} \n.typcn-th-menu:before { \n  content: '\\E116'; /* '' */\n} \n.typcn-th-small-outline:before { \n  content: '\\E117'; /* '' */\n} \n.typcn-th-small:before { \n  content: '\\E118'; /* '' */\n} \n.typcn-thermometer:before { \n  content: '\\E119'; /* '' */\n} \n.typcn-thumbs-down:before { \n  content: '\\E11A'; /* '' */\n} \n.typcn-thumbs-ok:before { \n  content: '\\E11B'; /* '' */\n} \n.typcn-thumbs-up:before { \n  content: '\\E11C'; /* '' */\n} \n.typcn-tick-outline:before { \n  content: '\\E11D'; /* '' */\n} \n.typcn-tick:before { \n  content: '\\E11E'; /* '' */\n} \n.typcn-ticket:before { \n  content: '\\E11F'; /* '' */\n} \n.typcn-time:before { \n  content: '\\E120'; /* '' */\n} \n.typcn-times-outline:before { \n  content: '\\E121'; /* '' */\n} \n.typcn-times:before { \n  content: '\\E122'; /* '' */\n} \n.typcn-trash:before { \n  content: '\\E123'; /* '' */\n} \n.typcn-tree:before { \n  content: '\\E124'; /* '' */\n} \n.typcn-upload-outline:before { \n  content: '\\E125'; /* '' */\n} \n.typcn-upload:before { \n  content: '\\E126'; /* '' */\n} \n.typcn-user-add-outline:before { \n  content: '\\E127'; /* '' */\n} \n.typcn-user-add:before { \n  content: '\\E128'; /* '' */\n} \n.typcn-user-delete-outline:before { \n  content: '\\E129'; /* '' */\n} \n.typcn-user-delete:before { \n  content: '\\E12A'; /* '' */\n} \n.typcn-user-outline:before { \n  content: '\\E12B'; /* '' */\n} \n.typcn-user:before { \n  content: '\\E12C'; /* '' */\n} \n.typcn-vendor-android:before { \n  content: '\\E12D'; /* '' */\n} \n.typcn-vendor-apple:before { \n  content: '\\E12E'; /* '' */\n} \n.typcn-vendor-microsoft:before { \n  content: '\\E12F'; /* '' */\n} \n.typcn-video-outline:before { \n  content: '\\E130'; /* '' */\n} \n.typcn-video:before { \n  content: '\\E131'; /* '' */\n} \n.typcn-volume-down:before { \n  content: '\\E132'; /* '' */\n} \n.typcn-volume-mute:before { \n  content: '\\E133'; /* '' */\n} \n.typcn-volume-up:before { \n  content: '\\E134'; /* '' */\n} \n.typcn-volume:before { \n  content: '\\E135'; /* '' */\n} \n.typcn-warning-outline:before { \n  content: '\\E136'; /* '' */\n} \n.typcn-warning:before { \n  content: '\\E137'; /* '' */\n} \n.typcn-watch:before { \n  content: '\\E138'; /* '' */\n} \n.typcn-waves-outline:before { \n  content: '\\E139'; /* '' */\n} \n.typcn-waves:before { \n  content: '\\E13A'; /* '' */\n} \n.typcn-weather-cloudy:before { \n  content: '\\E13B'; /* '' */\n} \n.typcn-weather-downpour:before { \n  content: '\\E13C'; /* '' */\n} \n.typcn-weather-night:before { \n  content: '\\E13D'; /* '' */\n} \n.typcn-weather-partly-sunny:before { \n  content: '\\E13E'; /* '' */\n} \n.typcn-weather-shower:before { \n  content: '\\E13F'; /* '' */\n} \n.typcn-weather-snow:before { \n  content: '\\E140'; /* '' */\n} \n.typcn-weather-stormy:before { \n  content: '\\E141'; /* '' */\n} \n.typcn-weather-sunny:before { \n  content: '\\E142'; /* '' */\n} \n.typcn-weather-windy-cloudy:before { \n  content: '\\E143'; /* '' */\n} \n.typcn-weather-windy:before { \n  content: '\\E144'; /* '' */\n} \n.typcn-wi-fi-outline:before { \n  content: '\\E145'; /* '' */\n} \n.typcn-wi-fi:before { \n  content: '\\E146'; /* '' */\n} \n.typcn-wine:before { \n  content: '\\E147'; /* '' */\n} \n.typcn-world-outline:before { \n  content: '\\E148'; /* '' */\n} \n.typcn-world:before { \n  content: '\\E149'; /* '' */\n} \n.typcn-zoom-in-outline:before { \n  content: '\\E14A'; /* '' */\n} \n.typcn-zoom-in:before { \n  content: '\\E14B'; /* '' */\n} \n.typcn-zoom-out-outline:before { \n  content: '\\E14C'; /* '' */\n} \n.typcn-zoom-out:before { \n  content: '\\E14D'; /* '' */\n} \n.typcn-zoom-outline:before { \n  content: '\\E14E'; /* '' */\n} \n.typcn-zoom:before { \n  content: '\\E14F'; /* '' */\n}", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'ailerons';\n    src: url(" + __webpack_require__(70) + ") format('woff2'),\n         url(" + __webpack_require__(71) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}\n", ""]);
 
 // exports
 
@@ -29493,34 +29640,76 @@ exports.push([module.i, "@charset 'UTF-8';\n \n/* @FONT-FACE loads font into bro
 /* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "typicons.woff";
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n    font-family: 'dosis';\n    src: url(" + __webpack_require__(72) + ") format('woff2'),\n         url(" + __webpack_require__(73) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}", ""]);
+
+// exports
+
 
 /***/ }),
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "typicons.ttf";
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n    font-family: 'marck-script';\n    src: url(" + __webpack_require__(74) + ") format('woff2'),\n         url(" + __webpack_require__(75) + ") format('woff');\n    font-weight: normal;\n    font-style: normal;\n\n}", ""]);
+
+// exports
+
 
 /***/ }),
 /* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "107d077d609efa7239165672c26a3c8b.svg";
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@charset 'UTF-8';\n \n/* @FONT-FACE loads font into browser */\n@font-face {\n  font-family: 'typicons';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(76) + ");\n  src: url(" + __webpack_require__(76) + "?#iefix) format('embedded-opentype'),\n       url(" + __webpack_require__(222) + ") format('woff'),\n       url(" + __webpack_require__(223) + ") format('truetype'),\n       url(" + __webpack_require__(224) + "#typicons) format('svg');\n}\n \n/* :before psuedo-selector inserts and styles icon */\n.typcn:before {\n  font-family: 'typicons';\n  font-style: normal;\n  font-weight: normal;\n  speak: none;\n  display: inline-block;\n  text-decoration: inherit;\n  width: 1em;\n  height: 1em;\n  font-size: 1em;\n  text-align: center;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n}\n \n/* Code for individual icons */ \n.typcn-adjust-brightness:before { \n  content: '\\E000'; /* '' */\n} \n.typcn-adjust-contrast:before { \n  content: '\\E001'; /* '' */\n} \n.typcn-anchor-outline:before { \n  content: '\\E002'; /* '' */\n} \n.typcn-anchor:before { \n  content: '\\E003'; /* '' */\n} \n.typcn-archive:before { \n  content: '\\E004'; /* '' */\n} \n.typcn-arrow-back-outline:before { \n  content: '\\E005'; /* '' */\n} \n.typcn-arrow-back:before { \n  content: '\\E006'; /* '' */\n} \n.typcn-arrow-down-outline:before { \n  content: '\\E007'; /* '' */\n} \n.typcn-arrow-down-thick:before { \n  content: '\\E008'; /* '' */\n} \n.typcn-arrow-down:before { \n  content: '\\E009'; /* '' */\n} \n.typcn-arrow-forward-outline:before { \n  content: '\\E00A'; /* '' */\n} \n.typcn-arrow-forward:before { \n  content: '\\E00B'; /* '' */\n} \n.typcn-arrow-left-outline:before { \n  content: '\\E00C'; /* '' */\n} \n.typcn-arrow-left-thick:before { \n  content: '\\E00D'; /* '' */\n} \n.typcn-arrow-left:before { \n  content: '\\E00E'; /* '' */\n} \n.typcn-arrow-loop-outline:before { \n  content: '\\E00F'; /* '' */\n} \n.typcn-arrow-loop:before { \n  content: '\\E010'; /* '' */\n} \n.typcn-arrow-maximise-outline:before { \n  content: '\\E011'; /* '' */\n} \n.typcn-arrow-maximise:before { \n  content: '\\E012'; /* '' */\n} \n.typcn-arrow-minimise-outline:before { \n  content: '\\E013'; /* '' */\n} \n.typcn-arrow-minimise:before { \n  content: '\\E014'; /* '' */\n} \n.typcn-arrow-move-outline:before { \n  content: '\\E015'; /* '' */\n} \n.typcn-arrow-move:before { \n  content: '\\E016'; /* '' */\n} \n.typcn-arrow-repeat-outline:before { \n  content: '\\E017'; /* '' */\n} \n.typcn-arrow-repeat:before { \n  content: '\\E018'; /* '' */\n} \n.typcn-arrow-right-outline:before { \n  content: '\\E019'; /* '' */\n} \n.typcn-arrow-right-thick:before { \n  content: '\\E01A'; /* '' */\n} \n.typcn-arrow-right:before { \n  content: '\\E01B'; /* '' */\n} \n.typcn-arrow-shuffle:before { \n  content: '\\E01C'; /* '' */\n} \n.typcn-arrow-sorted-down:before { \n  content: '\\E01D'; /* '' */\n} \n.typcn-arrow-sorted-up:before { \n  content: '\\E01E'; /* '' */\n} \n.typcn-arrow-sync-outline:before { \n  content: '\\E01F'; /* '' */\n} \n.typcn-arrow-sync:before { \n  content: '\\E020'; /* '' */\n} \n.typcn-arrow-unsorted:before { \n  content: '\\E021'; /* '' */\n} \n.typcn-arrow-up-outline:before { \n  content: '\\E022'; /* '' */\n} \n.typcn-arrow-up-thick:before { \n  content: '\\E023'; /* '' */\n} \n.typcn-arrow-up:before { \n  content: '\\E024'; /* '' */\n} \n.typcn-at:before { \n  content: '\\E025'; /* '' */\n} \n.typcn-attachment-outline:before { \n  content: '\\E026'; /* '' */\n} \n.typcn-attachment:before { \n  content: '\\E027'; /* '' */\n} \n.typcn-backspace-outline:before { \n  content: '\\E028'; /* '' */\n} \n.typcn-backspace:before { \n  content: '\\E029'; /* '' */\n} \n.typcn-battery-charge:before { \n  content: '\\E02A'; /* '' */\n} \n.typcn-battery-full:before { \n  content: '\\E02B'; /* '' */\n} \n.typcn-battery-high:before { \n  content: '\\E02C'; /* '' */\n} \n.typcn-battery-low:before { \n  content: '\\E02D'; /* '' */\n} \n.typcn-battery-mid:before { \n  content: '\\E02E'; /* '' */\n} \n.typcn-beaker:before { \n  content: '\\E02F'; /* '' */\n} \n.typcn-beer:before { \n  content: '\\E030'; /* '' */\n} \n.typcn-bell:before { \n  content: '\\E031'; /* '' */\n} \n.typcn-book:before { \n  content: '\\E032'; /* '' */\n} \n.typcn-bookmark:before { \n  content: '\\E033'; /* '' */\n} \n.typcn-briefcase:before { \n  content: '\\E034'; /* '' */\n} \n.typcn-brush:before { \n  content: '\\E035'; /* '' */\n} \n.typcn-business-card:before { \n  content: '\\E036'; /* '' */\n} \n.typcn-calculator:before { \n  content: '\\E037'; /* '' */\n} \n.typcn-calendar-outline:before { \n  content: '\\E038'; /* '' */\n} \n.typcn-calendar:before { \n  content: '\\E039'; /* '' */\n} \n.typcn-camera-outline:before { \n  content: '\\E03A'; /* '' */\n} \n.typcn-camera:before { \n  content: '\\E03B'; /* '' */\n} \n.typcn-cancel-outline:before { \n  content: '\\E03C'; /* '' */\n} \n.typcn-cancel:before { \n  content: '\\E03D'; /* '' */\n} \n.typcn-chart-area-outline:before { \n  content: '\\E03E'; /* '' */\n} \n.typcn-chart-area:before { \n  content: '\\E03F'; /* '' */\n} \n.typcn-chart-bar-outline:before { \n  content: '\\E040'; /* '' */\n} \n.typcn-chart-bar:before { \n  content: '\\E041'; /* '' */\n} \n.typcn-chart-line-outline:before { \n  content: '\\E042'; /* '' */\n} \n.typcn-chart-line:before { \n  content: '\\E043'; /* '' */\n} \n.typcn-chart-pie-outline:before { \n  content: '\\E044'; /* '' */\n} \n.typcn-chart-pie:before { \n  content: '\\E045'; /* '' */\n} \n.typcn-chevron-left-outline:before { \n  content: '\\E046'; /* '' */\n} \n.typcn-chevron-left:before { \n  content: '\\E047'; /* '' */\n} \n.typcn-chevron-right-outline:before { \n  content: '\\E048'; /* '' */\n} \n.typcn-chevron-right:before { \n  content: '\\E049'; /* '' */\n} \n.typcn-clipboard:before { \n  content: '\\E04A'; /* '' */\n} \n.typcn-cloud-storage:before { \n  content: '\\E04B'; /* '' */\n} \n.typcn-cloud-storage-outline:before { \n  content: '\\E054'; /* '' */\n} \n.typcn-code-outline:before { \n  content: '\\E04C'; /* '' */\n} \n.typcn-code:before { \n  content: '\\E04D'; /* '' */\n} \n.typcn-coffee:before { \n  content: '\\E04E'; /* '' */\n} \n.typcn-cog-outline:before { \n  content: '\\E04F'; /* '' */\n} \n.typcn-cog:before { \n  content: '\\E050'; /* '' */\n} \n.typcn-compass:before { \n  content: '\\E051'; /* '' */\n} \n.typcn-contacts:before { \n  content: '\\E052'; /* '' */\n} \n.typcn-credit-card:before { \n  content: '\\E053'; /* '' */\n} \n.typcn-css3:before { \n  content: '\\E055'; /* '' */\n} \n.typcn-database:before { \n  content: '\\E056'; /* '' */\n} \n.typcn-delete-outline:before { \n  content: '\\E057'; /* '' */\n} \n.typcn-delete:before { \n  content: '\\E058'; /* '' */\n} \n.typcn-device-desktop:before { \n  content: '\\E059'; /* '' */\n} \n.typcn-device-laptop:before { \n  content: '\\E05A'; /* '' */\n} \n.typcn-device-phone:before { \n  content: '\\E05B'; /* '' */\n} \n.typcn-device-tablet:before { \n  content: '\\E05C'; /* '' */\n} \n.typcn-directions:before { \n  content: '\\E05D'; /* '' */\n} \n.typcn-divide-outline:before { \n  content: '\\E05E'; /* '' */\n} \n.typcn-divide:before { \n  content: '\\E05F'; /* '' */\n} \n.typcn-document-add:before { \n  content: '\\E060'; /* '' */\n} \n.typcn-document-delete:before { \n  content: '\\E061'; /* '' */\n} \n.typcn-document-text:before { \n  content: '\\E062'; /* '' */\n} \n.typcn-document:before { \n  content: '\\E063'; /* '' */\n} \n.typcn-download-outline:before { \n  content: '\\E064'; /* '' */\n} \n.typcn-download:before { \n  content: '\\E065'; /* '' */\n} \n.typcn-dropbox:before { \n  content: '\\E066'; /* '' */\n} \n.typcn-edit:before { \n  content: '\\E067'; /* '' */\n} \n.typcn-eject-outline:before { \n  content: '\\E068'; /* '' */\n} \n.typcn-eject:before { \n  content: '\\E069'; /* '' */\n} \n.typcn-equals-outline:before { \n  content: '\\E06A'; /* '' */\n} \n.typcn-equals:before { \n  content: '\\E06B'; /* '' */\n} \n.typcn-export-outline:before { \n  content: '\\E06C'; /* '' */\n} \n.typcn-export:before { \n  content: '\\E06D'; /* '' */\n} \n.typcn-eye-outline:before { \n  content: '\\E06E'; /* '' */\n} \n.typcn-eye:before { \n  content: '\\E06F'; /* '' */\n} \n.typcn-feather:before { \n  content: '\\E070'; /* '' */\n} \n.typcn-film:before { \n  content: '\\E071'; /* '' */\n} \n.typcn-filter:before { \n  content: '\\E072'; /* '' */\n} \n.typcn-flag-outline:before { \n  content: '\\E073'; /* '' */\n} \n.typcn-flag:before { \n  content: '\\E074'; /* '' */\n} \n.typcn-flash-outline:before { \n  content: '\\E075'; /* '' */\n} \n.typcn-flash:before { \n  content: '\\E076'; /* '' */\n} \n.typcn-flow-children:before { \n  content: '\\E077'; /* '' */\n} \n.typcn-flow-merge:before { \n  content: '\\E078'; /* '' */\n} \n.typcn-flow-parallel:before { \n  content: '\\E079'; /* '' */\n} \n.typcn-flow-switch:before { \n  content: '\\E07A'; /* '' */\n} \n.typcn-folder-add:before { \n  content: '\\E07B'; /* '' */\n} \n.typcn-folder-delete:before { \n  content: '\\E07C'; /* '' */\n} \n.typcn-folder-open:before { \n  content: '\\E07D'; /* '' */\n} \n.typcn-folder:before { \n  content: '\\E07E'; /* '' */\n} \n.typcn-gift:before { \n  content: '\\E07F'; /* '' */\n} \n.typcn-globe-outline:before { \n  content: '\\E080'; /* '' */\n} \n.typcn-globe:before { \n  content: '\\E081'; /* '' */\n} \n.typcn-group-outline:before { \n  content: '\\E082'; /* '' */\n} \n.typcn-group:before { \n  content: '\\E083'; /* '' */\n} \n.typcn-headphones:before { \n  content: '\\E084'; /* '' */\n} \n.typcn-heart-full-outline:before { \n  content: '\\E085'; /* '' */\n} \n.typcn-heart-half-outline:before { \n  content: '\\E086'; /* '' */\n} \n.typcn-heart-outline:before { \n  content: '\\E087'; /* '' */\n} \n.typcn-heart:before { \n  content: '\\E088'; /* '' */\n} \n.typcn-home-outline:before { \n  content: '\\E089'; /* '' */\n} \n.typcn-home:before { \n  content: '\\E08A'; /* '' */\n} \n.typcn-html5:before { \n  content: '\\E08B'; /* '' */\n} \n.typcn-image-outline:before { \n  content: '\\E08C'; /* '' */\n} \n.typcn-image:before { \n  content: '\\E08D'; /* '' */\n} \n.typcn-infinity-outline:before { \n  content: '\\E08E'; /* '' */\n} \n.typcn-infinity:before { \n  content: '\\E08F'; /* '' */\n} \n.typcn-info-large-outline:before { \n  content: '\\E090'; /* '' */\n} \n.typcn-info-large:before { \n  content: '\\E091'; /* '' */\n} \n.typcn-info-outline:before { \n  content: '\\E092'; /* '' */\n} \n.typcn-info:before { \n  content: '\\E093'; /* '' */\n} \n.typcn-input-checked-outline:before { \n  content: '\\E094'; /* '' */\n} \n.typcn-input-checked:before { \n  content: '\\E095'; /* '' */\n} \n.typcn-key-outline:before { \n  content: '\\E096'; /* '' */\n} \n.typcn-key:before { \n  content: '\\E097'; /* '' */\n} \n.typcn-keyboard:before { \n  content: '\\E098'; /* '' */\n} \n.typcn-leaf:before { \n  content: '\\E099'; /* '' */\n} \n.typcn-lightbulb:before { \n  content: '\\E09A'; /* '' */\n} \n.typcn-link-outline:before { \n  content: '\\E09B'; /* '' */\n} \n.typcn-link:before { \n  content: '\\E09C'; /* '' */\n} \n.typcn-location-arrow-outline:before { \n  content: '\\E09D'; /* '' */\n} \n.typcn-location-arrow:before { \n  content: '\\E09E'; /* '' */\n} \n.typcn-location-outline:before { \n  content: '\\E09F'; /* '' */\n} \n.typcn-location:before { \n  content: '\\E0A0'; /* '' */\n} \n.typcn-lock-closed-outline:before { \n  content: '\\E0A1'; /* '' */\n} \n.typcn-lock-closed:before { \n  content: '\\E0A2'; /* '' */\n} \n.typcn-lock-open-outline:before { \n  content: '\\E0A3'; /* '' */\n} \n.typcn-lock-open:before { \n  content: '\\E0A4'; /* '' */\n} \n.typcn-mail:before { \n  content: '\\E0A5'; /* '' */\n} \n.typcn-map:before { \n  content: '\\E0A6'; /* '' */\n} \n.typcn-media-eject-outline:before { \n  content: '\\E0A7'; /* '' */\n} \n.typcn-media-eject:before { \n  content: '\\E0A8'; /* '' */\n} \n.typcn-media-fast-forward-outline:before { \n  content: '\\E0A9'; /* '' */\n} \n.typcn-media-fast-forward:before { \n  content: '\\E0AA'; /* '' */\n} \n.typcn-media-pause-outline:before { \n  content: '\\E0AB'; /* '' */\n} \n.typcn-media-pause:before { \n  content: '\\E0AC'; /* '' */\n} \n.typcn-media-play-outline:before { \n  content: '\\E0AD'; /* '' */\n} \n.typcn-media-play-reverse-outline:before { \n  content: '\\E0AE'; /* '' */\n} \n.typcn-media-play-reverse:before { \n  content: '\\E0AF'; /* '' */\n} \n.typcn-media-play:before { \n  content: '\\E0B0'; /* '' */\n} \n.typcn-media-record-outline:before { \n  content: '\\E0B1'; /* '' */\n} \n.typcn-media-record:before { \n  content: '\\E0B2'; /* '' */\n} \n.typcn-media-rewind-outline:before { \n  content: '\\E0B3'; /* '' */\n} \n.typcn-media-rewind:before { \n  content: '\\E0B4'; /* '' */\n} \n.typcn-media-stop-outline:before { \n  content: '\\E0B5'; /* '' */\n} \n.typcn-media-stop:before { \n  content: '\\E0B6'; /* '' */\n} \n.typcn-message-typing:before { \n  content: '\\E0B7'; /* '' */\n} \n.typcn-message:before { \n  content: '\\E0B8'; /* '' */\n} \n.typcn-messages:before { \n  content: '\\E0B9'; /* '' */\n} \n.typcn-microphone-outline:before { \n  content: '\\E0BA'; /* '' */\n} \n.typcn-microphone:before { \n  content: '\\E0BB'; /* '' */\n} \n.typcn-minus-outline:before { \n  content: '\\E0BC'; /* '' */\n} \n.typcn-minus:before { \n  content: '\\E0BD'; /* '' */\n} \n.typcn-mortar-board:before { \n  content: '\\E0BE'; /* '' */\n} \n.typcn-news:before { \n  content: '\\E0BF'; /* '' */\n} \n.typcn-notes-outline:before { \n  content: '\\E0C0'; /* '' */\n} \n.typcn-notes:before { \n  content: '\\E0C1'; /* '' */\n} \n.typcn-pen:before { \n  content: '\\E0C2'; /* '' */\n} \n.typcn-pencil:before { \n  content: '\\E0C3'; /* '' */\n} \n.typcn-phone-outline:before { \n  content: '\\E0C4'; /* '' */\n} \n.typcn-phone:before { \n  content: '\\E0C5'; /* '' */\n} \n.typcn-pi-outline:before { \n  content: '\\E0C6'; /* '' */\n} \n.typcn-pi:before { \n  content: '\\E0C7'; /* '' */\n} \n.typcn-pin-outline:before { \n  content: '\\E0C8'; /* '' */\n} \n.typcn-pin:before { \n  content: '\\E0C9'; /* '' */\n} \n.typcn-pipette:before { \n  content: '\\E0CA'; /* '' */\n} \n.typcn-plane-outline:before { \n  content: '\\E0CB'; /* '' */\n} \n.typcn-plane:before { \n  content: '\\E0CC'; /* '' */\n} \n.typcn-plug:before { \n  content: '\\E0CD'; /* '' */\n} \n.typcn-plus-outline:before { \n  content: '\\E0CE'; /* '' */\n} \n.typcn-plus:before { \n  content: '\\E0CF'; /* '' */\n} \n.typcn-point-of-interest-outline:before { \n  content: '\\E0D0'; /* '' */\n} \n.typcn-point-of-interest:before { \n  content: '\\E0D1'; /* '' */\n} \n.typcn-power-outline:before { \n  content: '\\E0D2'; /* '' */\n} \n.typcn-power:before { \n  content: '\\E0D3'; /* '' */\n} \n.typcn-printer:before { \n  content: '\\E0D4'; /* '' */\n} \n.typcn-puzzle-outline:before { \n  content: '\\E0D5'; /* '' */\n} \n.typcn-puzzle:before { \n  content: '\\E0D6'; /* '' */\n} \n.typcn-radar-outline:before { \n  content: '\\E0D7'; /* '' */\n} \n.typcn-radar:before { \n  content: '\\E0D8'; /* '' */\n} \n.typcn-refresh-outline:before { \n  content: '\\E0D9'; /* '' */\n} \n.typcn-refresh:before { \n  content: '\\E0DA'; /* '' */\n} \n.typcn-rss-outline:before { \n  content: '\\E0DB'; /* '' */\n} \n.typcn-rss:before { \n  content: '\\E0DC'; /* '' */\n} \n.typcn-scissors-outline:before { \n  content: '\\E0DD'; /* '' */\n} \n.typcn-scissors:before { \n  content: '\\E0DE'; /* '' */\n} \n.typcn-shopping-bag:before { \n  content: '\\E0DF'; /* '' */\n} \n.typcn-shopping-cart:before { \n  content: '\\E0E0'; /* '' */\n} \n.typcn-social-at-circular:before { \n  content: '\\E0E1'; /* '' */\n} \n.typcn-social-dribbble-circular:before { \n  content: '\\E0E2'; /* '' */\n} \n.typcn-social-dribbble:before { \n  content: '\\E0E3'; /* '' */\n} \n.typcn-social-facebook-circular:before { \n  content: '\\E0E4'; /* '' */\n} \n.typcn-social-facebook:before { \n  content: '\\E0E5'; /* '' */\n} \n.typcn-social-flickr-circular:before { \n  content: '\\E0E6'; /* '' */\n} \n.typcn-social-flickr:before { \n  content: '\\E0E7'; /* '' */\n} \n.typcn-social-github-circular:before { \n  content: '\\E0E8'; /* '' */\n} \n.typcn-social-github:before { \n  content: '\\E0E9'; /* '' */\n} \n.typcn-social-google-plus-circular:before { \n  content: '\\E0EA'; /* '' */\n} \n.typcn-social-google-plus:before { \n  content: '\\E0EB'; /* '' */\n} \n.typcn-social-instagram-circular:before { \n  content: '\\E0EC'; /* '' */\n} \n.typcn-social-instagram:before { \n  content: '\\E0ED'; /* '' */\n} \n.typcn-social-last-fm-circular:before { \n  content: '\\E0EE'; /* '' */\n} \n.typcn-social-last-fm:before { \n  content: '\\E0EF'; /* '' */\n} \n.typcn-social-linkedin-circular:before { \n  content: '\\E0F0'; /* '' */\n} \n.typcn-social-linkedin:before { \n  content: '\\E0F1'; /* '' */\n} \n.typcn-social-pinterest-circular:before { \n  content: '\\E0F2'; /* '' */\n} \n.typcn-social-pinterest:before { \n  content: '\\E0F3'; /* '' */\n} \n.typcn-social-skype-outline:before { \n  content: '\\E0F4'; /* '' */\n} \n.typcn-social-skype:before { \n  content: '\\E0F5'; /* '' */\n} \n.typcn-social-tumbler-circular:before { \n  content: '\\E0F6'; /* '' */\n} \n.typcn-social-tumbler:before { \n  content: '\\E0F7'; /* '' */\n} \n.typcn-social-twitter-circular:before { \n  content: '\\E0F8'; /* '' */\n} \n.typcn-social-twitter:before { \n  content: '\\E0F9'; /* '' */\n} \n.typcn-social-vimeo-circular:before { \n  content: '\\E0FA'; /* '' */\n} \n.typcn-social-vimeo:before { \n  content: '\\E0FB'; /* '' */\n} \n.typcn-social-youtube-circular:before { \n  content: '\\E0FC'; /* '' */\n} \n.typcn-social-youtube:before { \n  content: '\\E0FD'; /* '' */\n} \n.typcn-sort-alphabetically-outline:before { \n  content: '\\E0FE'; /* '' */\n} \n.typcn-sort-alphabetically:before { \n  content: '\\E0FF'; /* '' */\n} \n.typcn-sort-numerically-outline:before { \n  content: '\\E100'; /* '' */\n} \n.typcn-sort-numerically:before { \n  content: '\\E101'; /* '' */\n} \n.typcn-spanner-outline:before { \n  content: '\\E102'; /* '' */\n} \n.typcn-spanner:before { \n  content: '\\E103'; /* '' */\n} \n.typcn-spiral:before { \n  content: '\\E104'; /* '' */\n} \n.typcn-star-full-outline:before { \n  content: '\\E105'; /* '' */\n} \n.typcn-star-half-outline:before { \n  content: '\\E106'; /* '' */\n} \n.typcn-star-half:before { \n  content: '\\E107'; /* '' */\n} \n.typcn-star-outline:before { \n  content: '\\E108'; /* '' */\n} \n.typcn-star:before { \n  content: '\\E109'; /* '' */\n} \n.typcn-starburst-outline:before { \n  content: '\\E10A'; /* '' */\n} \n.typcn-starburst:before { \n  content: '\\E10B'; /* '' */\n} \n.typcn-stopwatch:before { \n  content: '\\E10C'; /* '' */\n} \n.typcn-support:before { \n  content: '\\E10D'; /* '' */\n} \n.typcn-tabs-outline:before { \n  content: '\\E10E'; /* '' */\n} \n.typcn-tag:before { \n  content: '\\E10F'; /* '' */\n} \n.typcn-tags:before { \n  content: '\\E110'; /* '' */\n} \n.typcn-th-large-outline:before { \n  content: '\\E111'; /* '' */\n} \n.typcn-th-large:before { \n  content: '\\E112'; /* '' */\n} \n.typcn-th-list-outline:before { \n  content: '\\E113'; /* '' */\n} \n.typcn-th-list:before { \n  content: '\\E114'; /* '' */\n} \n.typcn-th-menu-outline:before { \n  content: '\\E115'; /* '' */\n} \n.typcn-th-menu:before { \n  content: '\\E116'; /* '' */\n} \n.typcn-th-small-outline:before { \n  content: '\\E117'; /* '' */\n} \n.typcn-th-small:before { \n  content: '\\E118'; /* '' */\n} \n.typcn-thermometer:before { \n  content: '\\E119'; /* '' */\n} \n.typcn-thumbs-down:before { \n  content: '\\E11A'; /* '' */\n} \n.typcn-thumbs-ok:before { \n  content: '\\E11B'; /* '' */\n} \n.typcn-thumbs-up:before { \n  content: '\\E11C'; /* '' */\n} \n.typcn-tick-outline:before { \n  content: '\\E11D'; /* '' */\n} \n.typcn-tick:before { \n  content: '\\E11E'; /* '' */\n} \n.typcn-ticket:before { \n  content: '\\E11F'; /* '' */\n} \n.typcn-time:before { \n  content: '\\E120'; /* '' */\n} \n.typcn-times-outline:before { \n  content: '\\E121'; /* '' */\n} \n.typcn-times:before { \n  content: '\\E122'; /* '' */\n} \n.typcn-trash:before { \n  content: '\\E123'; /* '' */\n} \n.typcn-tree:before { \n  content: '\\E124'; /* '' */\n} \n.typcn-upload-outline:before { \n  content: '\\E125'; /* '' */\n} \n.typcn-upload:before { \n  content: '\\E126'; /* '' */\n} \n.typcn-user-add-outline:before { \n  content: '\\E127'; /* '' */\n} \n.typcn-user-add:before { \n  content: '\\E128'; /* '' */\n} \n.typcn-user-delete-outline:before { \n  content: '\\E129'; /* '' */\n} \n.typcn-user-delete:before { \n  content: '\\E12A'; /* '' */\n} \n.typcn-user-outline:before { \n  content: '\\E12B'; /* '' */\n} \n.typcn-user:before { \n  content: '\\E12C'; /* '' */\n} \n.typcn-vendor-android:before { \n  content: '\\E12D'; /* '' */\n} \n.typcn-vendor-apple:before { \n  content: '\\E12E'; /* '' */\n} \n.typcn-vendor-microsoft:before { \n  content: '\\E12F'; /* '' */\n} \n.typcn-video-outline:before { \n  content: '\\E130'; /* '' */\n} \n.typcn-video:before { \n  content: '\\E131'; /* '' */\n} \n.typcn-volume-down:before { \n  content: '\\E132'; /* '' */\n} \n.typcn-volume-mute:before { \n  content: '\\E133'; /* '' */\n} \n.typcn-volume-up:before { \n  content: '\\E134'; /* '' */\n} \n.typcn-volume:before { \n  content: '\\E135'; /* '' */\n} \n.typcn-warning-outline:before { \n  content: '\\E136'; /* '' */\n} \n.typcn-warning:before { \n  content: '\\E137'; /* '' */\n} \n.typcn-watch:before { \n  content: '\\E138'; /* '' */\n} \n.typcn-waves-outline:before { \n  content: '\\E139'; /* '' */\n} \n.typcn-waves:before { \n  content: '\\E13A'; /* '' */\n} \n.typcn-weather-cloudy:before { \n  content: '\\E13B'; /* '' */\n} \n.typcn-weather-downpour:before { \n  content: '\\E13C'; /* '' */\n} \n.typcn-weather-night:before { \n  content: '\\E13D'; /* '' */\n} \n.typcn-weather-partly-sunny:before { \n  content: '\\E13E'; /* '' */\n} \n.typcn-weather-shower:before { \n  content: '\\E13F'; /* '' */\n} \n.typcn-weather-snow:before { \n  content: '\\E140'; /* '' */\n} \n.typcn-weather-stormy:before { \n  content: '\\E141'; /* '' */\n} \n.typcn-weather-sunny:before { \n  content: '\\E142'; /* '' */\n} \n.typcn-weather-windy-cloudy:before { \n  content: '\\E143'; /* '' */\n} \n.typcn-weather-windy:before { \n  content: '\\E144'; /* '' */\n} \n.typcn-wi-fi-outline:before { \n  content: '\\E145'; /* '' */\n} \n.typcn-wi-fi:before { \n  content: '\\E146'; /* '' */\n} \n.typcn-wine:before { \n  content: '\\E147'; /* '' */\n} \n.typcn-world-outline:before { \n  content: '\\E148'; /* '' */\n} \n.typcn-world:before { \n  content: '\\E149'; /* '' */\n} \n.typcn-zoom-in-outline:before { \n  content: '\\E14A'; /* '' */\n} \n.typcn-zoom-in:before { \n  content: '\\E14B'; /* '' */\n} \n.typcn-zoom-out-outline:before { \n  content: '\\E14C'; /* '' */\n} \n.typcn-zoom-out:before { \n  content: '\\E14D'; /* '' */\n} \n.typcn-zoom-outline:before { \n  content: '\\E14E'; /* '' */\n} \n.typcn-zoom:before { \n  content: '\\E14F'; /* '' */\n}", ""]);
+
+// exports
+
 
 /***/ }),
 /* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ailerons-typeface-webfont.ttf";
+module.exports = __webpack_require__.p + "typicons.woff";
 
 /***/ }),
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "marckscript-regular-webfont.ttf";
+module.exports = __webpack_require__.p + "typicons.ttf";
 
 /***/ }),
 /* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "107d077d609efa7239165672c26a3c8b.svg";
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ailerons-typeface-webfont.ttf";
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "marckscript-regular-webfont.ttf";
+
+/***/ }),
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dosis-regular-webfont.ttf";
