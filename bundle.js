@@ -24549,7 +24549,7 @@ var Projects = (_dec = (0, _reactKeydown2.default)('left'), _dec2 = (0, _reactKe
               _react2.default.createElement(
                 'p',
                 { className: 'slide-caption' },
-                'A really beautiful portfolio site for a Delhi based astro-photographer, Mr. Ajay Talwar. The photograps and videos are just breathtaking.',
+                'A really beautiful portfolio site for a Delhi based astro-photographer, Mr. Ajay Talwar. The photographs and videos are breathtaking.',
                 _react2.default.createElement('br', null),
                 _react2.default.createElement('br', null),
                 'One of my very first projects. It is made on Wordpress platform.'
