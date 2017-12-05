@@ -24486,7 +24486,7 @@ var Projects = (_dec = (0, _reactKeydown2.default)('left'), _dec2 = (0, _reactKe
               ),
               _react2.default.createElement(
                 'div',
-                { style: { width: '50%', float: 'left', display: 'inline-block' } },
+                { style: { width: '38%', float: 'left', display: 'inline-block' } },
                 _react2.default.createElement(
                   'p',
                   { className: 'slide-title' },
@@ -24495,7 +24495,13 @@ var Projects = (_dec = (0, _reactKeydown2.default)('left'), _dec2 = (0, _reactKe
                 _react2.default.createElement(
                   'p',
                   { className: 'slide-caption' },
-                  'English Learning app for kids'
+                  'Learning English was never so interesting. English Duniya blends learning with fun. The products core is the recommendation engine that recognizes a student\'s level and unlocks new lessons based on it.',
+                  _react2.default.createElement('br', null),
+                  _react2.default.createElement('br', null),
+                  'The app is made on Cordova platform and uses Phaser for rendering the gaming elements. Rest of the app is made on Ionic framework. It is also showcased on the Ionic site.',
+                  _react2.default.createElement('br', null),
+                  _react2.default.createElement('br', null),
+                  'Currently, the app caters to almost 5000 kids.'
                 )
               )
             )
@@ -24513,12 +24519,15 @@ var Projects = (_dec = (0, _reactKeydown2.default)('left'), _dec2 = (0, _reactKe
               _react2.default.createElement(
                 'p',
                 { className: 'slide-title' },
-                'Alpha Juice'
+                'AlphaJuice'
               ),
               _react2.default.createElement(
                 'p',
                 { className: 'slide-caption' },
-                'Gamified vocabulary learning app'
+                'Hackathon prototype, the app gamifies the whole experience of learning new words. And it is suitable for all age groups.',
+                _react2.default.createElement('br', null),
+                _react2.default.createElement('br', null),
+                'It is made on Cordova platform and utilizes Phaser as it\'s framework. Almost all of the app is written purely in Javascript. And it was developed in a span of just two days.'
               )
             )
           ),
@@ -24540,7 +24549,10 @@ var Projects = (_dec = (0, _reactKeydown2.default)('left'), _dec2 = (0, _reactKe
               _react2.default.createElement(
                 'p',
                 { className: 'slide-caption' },
-                'Portfolio site for delhi based astro photographer'
+                'A really beautiful portfolio site for a Delhi based astro-photographer, Mr. Ajay Talwar. The photograps and videos are just breathtaking.',
+                _react2.default.createElement('br', null),
+                _react2.default.createElement('br', null),
+                'One of my very first projects. It is made on Wordpress platform.'
               )
             )
           )
