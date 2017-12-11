@@ -27813,6 +27813,7 @@ var Sidebar = (_dec = (0, _reactKeydown2.default)('down'), _dec2 = (0, _reactKey
           break;
         }
       }
+      this.logPageView();
     }
   }, {
     key: 'componentWillMount',
