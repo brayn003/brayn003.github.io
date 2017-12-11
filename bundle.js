@@ -32897,7 +32897,7 @@ var Background = function (_Component) {
         defaultStateName: 'home',
         states: {
           home: {
-            gradients: [['#AA076B', '#61045F'], ['#02AAB0', '#00CDAC']]
+            gradients: [['#185a9d', '#43cea2'], ['#AA076B', '#61045F']]
           },
           about: {
             gradients: [['#9D50BB', '#6E48AA'], ['#4776E6', '#8E54E9']]
